@@ -1,5 +1,13 @@
 public class TimeCalc {
     public static void main(String[] args) {
-        // Replace this comment with your code
-    }
+        String[] parts = args[0].split(":");
+		int hours = Integer.parseInt(parts[0]);
+		int minutes = Integer.parseInt(parts[1]);
+		int minutesadd = Integer.parseInt(args[1]);
+		int Total = (hours * 60 + minutes + minutesadd);
+		int newhours = Total / 60;
+		int newminutes = Total % 60;
+		System.out.println(newhours + ":" + newminutes);
+
+   }
 }
