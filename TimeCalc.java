@@ -5,7 +5,7 @@ public class TimeCalc {
 		int minutes = Integer.parseInt(parts[1]);
 		int minutesadd = Integer.parseInt(args[1]);
 		int Total = (hours * 60 + minutes + minutesadd);
-		int newhours = Total / 60;
+		int newhours = (Total / 60) % 24;
 		int newminutes = Total % 60;
         if (newminutes < 10) {
             System.out.println(newhours + ":0" + newminutes);
