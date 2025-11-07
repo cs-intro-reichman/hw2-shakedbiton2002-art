@@ -7,6 +7,11 @@ public class TimeCalc {
 		int Total = (hours * 60 + minutes + minutesadd);
 		int newhours = (Total / 60) % 24;
 		int newminutes = Total % 60;
+        if (newhours < 10) {
+            System.out.print("0" + newhours + ":");
+         } else {
+            System.out.print(newhours + ":");
+         }
         if (newminutes < 10) {
             System.out.println(newhours + ":0" + newminutes);
          } else { 
