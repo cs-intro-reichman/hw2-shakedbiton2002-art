@@ -6,13 +6,11 @@ public class Cheers {
 
         for (int i = 0; i < name.length(); i++) {
                  char c = name.charAt(i);
-                  if ("AEIOUaeiou".indexOf(c) >= 0) {
+                 if ("AEFHILMNORSX".indexOf(c) >= 0) {
                          System.out.println("Give me an " + c + ": " + c + "!");
-                         } else {
-                                 System.out.println("Give me a " + c + ": " + c + "!");
-            }
+                        } else {
+                                System.out.println("Give me a " + c + ": " + c + "!"); }
         }
-
         System.out.println("What does that spell?");
 
         for (int i = 0; i < times; i++) {
