@@ -8,6 +8,14 @@ public class Collatz {
             int New = i;
             int count = 1;
 
+            // טיפול במקרה i == 1
+            if (i == 1) {
+                if (mode.equals("v")) {
+                    System.out.println("1 4 2 1 (4)");
+                }
+                continue;
+            }
+
             if (mode.equals("v")) {
                 System.out.print(i + " ");
             }
@@ -30,7 +38,6 @@ public class Collatz {
             }
         }
 
-       System.out.println("Every one of the first " + n + " hailstone sequences reached 1.");
-
-}
+        System.out.println("Every one of the first " + n + " hailstone sequences reached 1.");
+    }
 }
