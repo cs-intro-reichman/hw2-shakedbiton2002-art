@@ -8,7 +8,7 @@ public class Collatz {
             int New = i;
             int count = 1;
 
-            // טיפול במקרה i == 1
+            
             if (i == 1) {
                 if (mode.equals("v")) {
                     System.out.println("1 4 2 1 (4)");
